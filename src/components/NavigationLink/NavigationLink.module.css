@@ -1,0 +1,30 @@
+.nav__link {
+  display: inline-flex;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: right;
+  color: var(--color-p);
+}
+.nav__link:hover {
+  color: var(--accent-button);
+}
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 40px;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .navLink {
+    justify-content: flex-end;
+    gap: 54px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .nav__link {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,73 @@
+.languageSwitcher {
+  position: relative;
+  display: inline-block;
+  font-family: sans-serif;
+  color: var(--white);
+}
+
+.selectedLang {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.selectedLang:hover {
+  transform: scale(1.1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  color: var(--accent-button);
+}
+.selectedLang:hover .iconLocale {
+  fill: var(--accent-button);
+}
+.iconLocale {
+  width: 14px;
+  height: 8px;
+  fill: var(--white);
+}
+.arrow {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.langDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: transparent;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  border-radius: 5px;
+  display: block;
+  min-width: 60px;
+  z-index: 10;
+}
+
+.langItem {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+  padding: 5px 0;
+  text-align: left;
+}
+
+.langItem:hover {
+  color: var(--accent-button);
+}
+
+.active {
+  font-weight: bold;
+}

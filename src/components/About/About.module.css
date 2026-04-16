@@ -1,0 +1,220 @@
+.sectionAbout {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.adWrap {
+  background-color: transparent;
+}
+@media screen and (min-width: 375px) {
+  .adWrap.lazyLoaded {
+    background-image: url('/img/background/About/about_mob_x1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .adWrap.lazyLoaded {
+      background-image: url('/img/background/About/about_mob_x2.jpg');
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .adWrap.lazyLoaded {
+    background-image: url('/img/background/About/about_tablet_x1.jpg');
+  }
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .adWrap.lazyLoaded {
+      background-image: url('/img/background/About/about_tablet_x2.jpg');
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .adWrap.lazyLoaded {
+    background-image: url('/img/background/About/about_x1.jpg');
+  }
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .adWrap.lazyLoaded {
+      background-image: url('/img/background/About/about_x2.jpg');
+    }
+  }
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+  gap: 56px;
+  max-width: 1440px;
+  position: relative;
+}
+.aboutMeHead {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 39px;
+}
+.aboutMeTitle {
+  color: var(--accent-button);
+  font-size: 18px;
+  white-space: nowrap;
+}
+.fadingLine {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    /* rgba(255, 255, 255, 0) 0%, */ rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+.aboutMeText {
+  font-size: 13px;
+  line-height: 170%;
+  color: var(--color-p);
+}
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 40px;
+  padding: 12px 40px 12px 48px;
+  font-size: 14px;
+  white-space: nowrap;
+  color: var(--white);
+  border-color: var(--white);
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  position: relative;
+  z-index: 2;
+}
+.downloadBtn:hover {
+  color: var(--accent-button);
+  border-color: var(--accent-button);
+  transform: scale(1.04);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.downloadBtn:hover .iconFile {
+  fill: var(--accent-button);
+}
+.iconFile {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+.aboutMePhoto {
+  position: relative;
+}
+.aboutMeShadow {
+  position: absolute;
+  min-width: 300px;
+  width: 100%;
+  aspect-ratio: 4 / 4.03;
+  background: linear-gradient(180deg, rgba(0, 2, 5, 0) 85.5%, #000205 93%);
+  transform: rotate(0deg);
+  z-index: 1;
+}
+@media screen and (min-width: 375px) {
+  .downloadBtn {
+    width: 327px;
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aboutMeHead {
+    gap: 40px;
+  }
+  .aboutMeTitle {
+    font-size: 20px;
+  }
+  .aboutMeText {
+    font-size: 16px;
+  }
+  .downloadBtn {
+    height: 48px;
+    font-size: 16px;
+  }
+  .iconFile {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+  }
+  .aboutMe,
+  .aboutMePhoto {
+    width: 632px;
+    /* height: 589px; */
+  }
+  .aboutMePhoto {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
+  .aboutMeShadow {
+    position: absolute;
+    bottom: -60px;
+    right: -10px;
+    width: 200%;
+    height: 589px;
+    background: linear-gradient(180deg, rgba(0, 2, 5, 0) 85.5%, #000205 97%);
+    transform: rotate(0deg);
+    z-index: 1;
+  }
+  .aboutMePhotoPicture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .aboutMePhotoPicture img {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+  }
+  .aboutMeTitle {
+    font-size: 28px;
+  }
+  .aboutMeText {
+    font-size: 20px;
+  }
+  .downloadBtn {
+    min-width: 362px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+    .aboutMeShadow {
+    bottom: -105px;
+  }
+  .aboutMePhotoPicture img {
+    bottom: -105px;
+  }
+  
+}

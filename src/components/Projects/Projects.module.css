@@ -1,0 +1,402 @@
+.projectSection {
+  padding: 40px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.projectContainer {
+  padding: 0;
+  max-width: 1440px;
+}
+.projectContainerSwipe {
+  padding: 0;
+}
+.projectWraper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  gap: 48px;
+  margin: 0 auto;
+}
+
+.projectleftTitle {
+  width: 100%;
+  height: 34px;
+  position: relative;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.displayNone {
+  display: none;
+}
+.projectleftTitleRotate {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 34px;
+}
+.fadingLine {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    /* rgba(255, 255, 255, 0) 0%, */ rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.projectTitle {
+  font-size: 22px;
+  text-align: right;
+  color: var(--accent-button);
+}
+
+.projectRightSwiper {
+  width: 100%;
+  height: auto;
+}
+
+.projectRightSwiper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.projectSwiperItem {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.projectSwiperItemMob {
+  padding: 80px 12px 0px;
+}
+.projectTopClose {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  height: 40px;
+}
+.projectBtnClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 40px;
+  height: 40px;
+}
+.projectClose {
+  width: 22px;
+  height: 22px;
+  fill: var(--amiora-color-1);
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.projectBtnClose:hover .projectClose {
+  fill: var(--accent-button);
+  transform: scale(1.04);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.swiperNumberTitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 40px;
+  padding-left: 24px;
+  color: var(--amiora-color-1);
+}
+.swiperNameTitle,
+.swiperTypeTitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--amiora-color-2);
+}
+.swiperTypeTitle {
+  font-size: 14px;
+  padding-top: 11px;
+}
+.swiperText {
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--amiora-color-2);
+}
+.swiperTextTop {
+  margin-top: 40px;
+  padding: 40px 24px 0px;
+}
+
+.swiperTypeWraper {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.swiperBtn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 1px;
+  padding-bottom: 17px;
+  padding-left: 18px;
+  border-bottom: 1px solid var(--amiora-color-2);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+  color: var(--amiora-color-2);
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.swiperIcon {
+  width: 18px;
+  height: 18px;
+  fill: var(--amiora-color-2);
+}
+.swiperIconTop {
+  transform: rotate(90deg);
+}
+.swiperBtn:hover {
+  color: var(--accent-button);
+  border-bottom: 1px solid var(--accent-button);
+  transform: scale(1.04);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.swiperBtn:hover .swiperIcon {
+  fill: var(--accent-button);
+}
+.projectSwiperList,
+.projectSwiperListShort {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+.projectSwiperListShort {
+  padding: 0;
+}
+.projectSwiperItemSeparator {
+  border-top: 1px solid var(--amiora-color-1);
+  margin: 0 24px;
+}
+.projectSwiperSkils {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 24px;
+}
+.swiperSkilsList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.swiperSkilsItem,
+.swiperLink,
+.swiperViewLink {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--amiora-color-2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  border-radius: 100px;
+  padding: 8px 20px;
+}
+
+.swiperSkilsItem {
+  border: 0.5px solid var(--color-p);
+  /* min-width: 94px; */
+  height: 28px;
+}
+.swiperSkilsItem:hover {
+  background: var(--background-tech);
+}
+.swiperViewWraper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.swiperLink {
+  display: none;
+}
+.swiperViewLink {
+  height: 40px;
+}
+.swiperLink,
+.swiperViewLink {
+  border: 0.5px solid var(--accent-button);
+  height: 36px;
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.swiperLink:hover,
+.swiperViewLink:hover {
+  color: var(--accent-button);
+  text-decoration: underline;
+  transform: scale(1.04);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.swiperViewLink {
+  height: 40px;
+}
+@media screen and (min-width: 375px) {
+  .projectSwiperItemMob {
+    padding: 80px 24px 0px;
+  }
+  .swiperBtn {
+    padding-left: 58px;
+    font-size: 14px;
+  }
+  .swiperViewLink {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projectContainer {
+    padding: 0 68px;
+    max-width: 1440px;
+  }
+  .swiperNameTitle {
+    font-size: 20px;
+  }
+  .swiperText {
+    font-size: 16px;
+  }
+  .swiperTextTop {
+    padding: 40px 64px 0;
+  }
+  .projectSwiperItem {
+    gap: 40px;
+  }
+  .projectSwiperItemMob {
+    padding: 0;
+  }
+  .swiperNumberTitle {
+    font-size: 48px;
+    padding-left: 0;
+  }
+  .projectTitle {
+    font-size: 20px;
+  }
+  .swiperTypeWraper {
+    align-items: center;
+  }
+  .swiperTypeTitle {
+    font-size: 18px;
+    padding-top: 0;
+  }
+  .projectleftTitle {
+    padding: 0;
+  }
+  .swiperSkilsList {
+    gap: 32px;
+  }
+  .swiperSkilsItem {
+    font-size: 16px;
+    height: 36px;
+  }
+  .swiperBtn {
+    padding-left: 75px;
+    padding-bottom: 20px;
+    font-size: 16px;
+  }
+  .projectSwiperItemSeparator {
+    margin: 0;
+  }
+  .projectSwiperSkils {
+    padding: 0;
+  }
+  .swiperLink {
+    display: flex;
+  }
+  .swiperViewLink {
+    display: none;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .projectSection {
+    max-width: 1440px;
+  }
+  .projectContainer {
+    padding: 0 78px 0 40px;
+  }
+  .projectWraper {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+    gap: 4px;
+    margin: 0 auto;
+  }
+  .swiperNumberTitle {
+    font-size: 56px;
+  }
+  .projectleftTitle {
+    width: 34px;
+    height: 1209px;
+    position: relative;
+  }
+  .displayNone {
+    display: none;
+  }
+  .projectleftTitleRotate {
+    position: absolute;
+    top: 586px;
+    left: -589px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    width: 1209px;
+    height: 34px;
+    transform: rotate(270deg);
+  }
+  .fadingLine {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.5) 50% /* rgba(255, 255, 255, 0) 100% */
+    );
+  }
+  .projectSwiperList {
+    padding: 0 80px;
+  }
+  .projectTitle {
+    font-size: 28px;
+  }
+  .swiperText {
+    font-size: 18px;
+  }
+  .swiperTextTop {
+    margin-top: 40px;
+    padding: 40px 40px 0;
+  }
+  .projectTopClose {
+    height: 52px;
+  }
+  .swiperTypeTitle {
+    font-size: 20px;
+  }
+  .swiperBtn {
+    padding-left: 0;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .projectSection {
+    padding: 97px 0 56px 0;
+  }
+  .projectRightSwiper {
+    /* width: 1284px; */
+  }
+}

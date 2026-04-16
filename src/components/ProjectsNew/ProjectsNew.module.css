@@ -1,0 +1,315 @@
+.projectSection {
+  padding: 40px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.projectContainer {
+  padding: 0 16px;
+  max-width: 1440px;
+}
+.projectContainerSwipe {
+  padding: 0;
+}
+.projectWraper {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  gap: 48px;
+  margin: 0 auto;
+}
+.projectleftTitle {
+  width: 100%;
+  height: 34px;
+  position: relative;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.projectleftTitleRotate {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 34px;
+}
+.fadingLine {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    /* rgba(255, 255, 255, 0) 0%, */ rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.projectTitle {
+  font-size: 22px;
+  text-align: right;
+  color: var(--accent-button);
+}
+.separatorLine {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 1px;
+}
+.projectRightWrapper {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.projectItem {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column; /* align-items: flex-start; */
+  justify-content: stretch;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid rgba(251, 255, 254, 0.1);
+  border-radius: 10px;
+  box-shadow:
+    0 10px 10px 0 rgba(0, 0, 0, 0.3),
+    0 0 10px 0 rgba(48, 169, 38, 0.2);
+  transition: box-shadow 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.projectItem:hover {
+  box-shadow:
+    0 10px 10px 0 rgba(0, 0, 0, 0.3),
+    0 0 20px 0 rgba(48, 169, 38, 0.2);
+  transform: box-shadow 300ms ease;
+}
+.itemWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+}
+.imageWrapper {
+  width: 100%; /* max-height: 300px; */
+  aspect-ratio: 380 / 280;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+.image {
+  /* object-fit: contain; height: 100%; width: auto; */
+  max-height: 300px;
+  object-fit: cover; /* обрізає краї, але заповнює блок */
+  object-position: center;
+}
+.text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--white);
+}
+.textBold {
+  font-weight: 500;
+}
+.btnBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.IconBlock {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.IconBlock .btnIcon {
+  transform: rotate(-180deg);
+}
+.btnInfo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  fill: rgba(3, 2, 22, 0.5);
+  backdrop-filter: blur(25px);
+  box-shadow: inset 0 1px 40px 0 rgba(227, 222, 255, 0.3);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.btn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 0px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.btn:hover {
+  border-color: var(--accent-button);
+  color: var(--accent-button);
+  transform: scale(1.02);
+}
+.btnInfo:hover .btnIcon,
+.btn:hover .btnIcon {
+  fill: var(--accent-button);
+}
+.btnMore {
+  width: calc(100% - 20px);
+  max-width: 400px;
+}
+
+.btnInfo .btnIcon {
+  transform: rotate(0deg);
+  transition:
+    fill 300ms ease,
+    transform 300ms ease;
+}
+.btnInfo:hover {
+  border: 1px solid var(--accent-button);
+  transform: scale(1.1);
+}
+.btnInfo:hover .btnIcon {
+  transform: rotate(180deg) translate(-2px, 2px);
+}
+.btnIcon {
+  width: 16px;
+  height: 16px;
+  fill: var(--white);
+  transition: transform 300ms ease;
+}
+.rotateDown {
+  transform: rotate(-45deg);
+}
+.rotateTop {
+  transform: rotate(135deg);
+}
+@media screen and (min-width: 768px) {
+  .projectContainer {
+    padding: 0 68px;
+    max-width: 1440px;
+  }
+  .projectsList {
+    flex-direction: row;
+  }
+  .projectItem {
+    width: calc((100% - 24px) / 2);
+    max-width: 100%;
+    padding: 10px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  .btnMore {
+    width: calc(((100% - 24px) / 2) - 20px);
+  }
+  .btnMore,
+  .btn {
+    min-height: 48px;
+    max-height: 48px;
+  }
+  .btnInfo {
+    width: 40px;
+    height: 40px;
+  }
+  .projectTitle {
+    font-size: 20px;
+  }
+  .projectleftTitle {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .projectSection {
+    max-width: 1440px;
+    padding: 100px 0px;
+  }
+  .projectContainer {
+    padding: 0 78px 0 40px;
+  }
+  .projectWraper {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    justify-content: center;
+    gap: 8px;
+    margin: 0 auto;
+  }
+  .projectleftTitle {
+    width: 34px;
+    height: 1209px;
+    position: relative;
+  }
+  .projectleftTitleRotate {
+    position: absolute;
+    top: 586px;
+    left: -589px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    width: 1209px;
+    height: 34px;
+    transform: rotate(270deg);
+  }
+  .fadingLine {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.5) 50% /* rgba(255, 255, 255, 0) 100% */
+    );
+  }
+  .projectTitle {
+    font-size: 28px;
+  }
+  .projectItem {
+    width: calc((100% - 48px) / 3);
+    padding: 18px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .btnMore {
+    width: calc(((100% - 48px) / 3) - 36px);
+  }
+  .btnMore,
+  .btn {
+    min-height: 54px;
+    max-height: 54px;
+  }
+  .btnInfo {
+    right: 16px;
+    top: 16px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  /* .projectSection { padding: 97px 0 56px 0; } */
+}

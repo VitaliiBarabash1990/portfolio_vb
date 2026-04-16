@@ -1,0 +1,112 @@
+.navMenu {
+  display: flex;
+  gap: 24px;
+}
+
+.navMenu__item_link {
+  display: flex;
+  align-items: center;
+}
+
+.navMenu__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--text-black);
+}
+
+.navMenu__link:hover,
+.navMenu__link:focus {
+  color: var(--pink);
+}
+
+.navMenu_modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navBarMessage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.navBarMessageItem {
+  width: 40px;
+  height: 40px;
+}
+.socIcon {
+  width: 34px;
+  height: 35px;
+  fill: var(--color-p);
+}
+.heroLinkBtnMob {
+  width: 232px;
+  height: 48px;
+  border-bottom: 1px solid var(--color-p);
+}
+.heroLinkBtnMob:hover {
+  color: var(--accent-button);
+  border-color: var(--accent-button);
+  cursor: pointer;
+}
+.heroLinkBtnMob:hover .heroMobLinkIcon {
+  fill: var(--accent-button);
+}
+.local__switcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.heroBtnWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.heroMobLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+}
+.heroMobLinkIcon {
+  width: 15px;
+  height: 15px;
+  fill: var(--color-p);
+}
+.heroBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+  padding: 12px 32px 12px 40px;
+  width: 271px;
+  font-size: 14px;
+}
+.heroBtn:hover .btn_icon {
+  stroke: var(--color-p);
+}
+.btn_icon {
+  width: 16px;
+  height: 16px;
+  stroke: var(--accent-button);
+  pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navMenu {
+    gap: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+}

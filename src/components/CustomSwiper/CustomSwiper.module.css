@@ -1,0 +1,121 @@
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  width: 1280px;
+  height: auto;
+}
+
+.reviewCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.aboutMePhotoPicture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.aboutMePhotoPicture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.navButton {
+  display: none;
+}
+
+.navButton_icon {
+  fill: var(--amiora-color-1);
+  min-width: 27px;
+  height: 27px;
+}
+.right {
+  rotate: 180deg;
+}
+
+.navButton {
+  position: absolute;
+  top: 65%;
+  transform: translateY(-50%);
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.navButton:hover .navButton_icon {
+  background: inherit;
+  fill: var(--accent-button);
+  border-radius: 50%;
+  transform: scale(1.04);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.swiperArowWraper,
+.swiperArowWraperShort {
+  position: absolute;
+  bottom: -80px;
+  left: 16px;
+  width: calc((100%) - 32px);
+  height: 45px;
+}
+.prevButton {
+  top: 0;
+  left: 0;
+}
+.nextButton {
+  top: 0;
+  right: 0;
+}
+.prevButtonProject {
+  top: 0;
+  left: 0px;
+}
+.nextButtonProject {
+  top: 0;
+  right: 0px;
+}
+@media screen and (min-width: 768px) {
+  .swiperArowWraper {
+    bottom: 25px;
+    left: -50px;
+    width: calc(100% + 100px);
+  }
+  .swiperArowWraperShort {
+    left: 50px;
+    width: calc((100%) - 100px);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiperArowWraper {
+    bottom: 250px;
+  }
+  .swiperArowWraperShort {
+    left: 40px;
+    width: calc((100%) - 80px);
+  }
+}

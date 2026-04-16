@@ -1,0 +1,108 @@
+.sliderContainer {
+  display: flex;
+  min-width: 280px;
+  max-width: 1280px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+}
+.swiper {
+  width: 100%;
+}
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cardItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+.cardItem h3 {
+  width: 32px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+
+  color: var(--amiora-color-1);
+  font-family: var(--second-family);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.cardItem h4 {
+  color: var(--color-p);
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+.cardItemDescr p {
+  color: var(--color-p);
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+.wraperArrow {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navButton_icon {
+  fill: var(--white);
+  width: 16px;
+  height: 17px;
+}
+.right {
+  transform: rotate(180deg);
+}
+
+.paginationWraper {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.paginationItem {
+  width: 100%;
+}
+.boolitLongIcon {
+  width: 30px;
+  height: 1px;
+  color: var(--accent-button);
+  display: block;
+}
+.boolitShortIcon {
+  width: 16px;
+  height: 1px;
+  color: var(--amiora-color-1);
+  display: block;
+}
+@media screen and (min-width: 375px) {
+  .paginationWraper {
+    gap: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .cardItem h4 {
+    font-size: 16px;
+  }
+}

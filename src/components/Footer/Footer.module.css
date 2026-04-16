@@ -1,0 +1,312 @@
+.sectionFooter {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.adWrap {
+  background-color: transparent;
+}
+@media screen and (min-width: 375px) {
+  .adWrap.lazyLoaded {
+    background-image: url('/img/background/Contacts/contacts_mob_x1.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .adWrap.lazyLoaded {
+      background-image: url('/img/background/Contacts/contacts_mob_x2.jpg');
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .adWrap.lazyLoaded {
+    background-image: url('/img/background/Contacts/contacts_tablet_x1.jpg');
+  }
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .adWrap.lazyLoaded {
+      background-image: url('/img/background/Contacts/contacts_tablet_x2.jpg');
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .adWrap.lazyLoaded {
+    background-image: url('/img/background/Contacts/contacts_x1.jpg');
+  }
+  @media screen and (min-resolution: 2dppx),
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .adWrap.lazyLoaded {
+      background-image: url('/img/background/Contacts/contacts_x2.jpg');
+    }
+  }
+}
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+.footerTitleBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 1440px;
+}
+.footerTitle {
+  font-size: 18px;
+  text-align: right;
+  color: var(--accent-button);
+  white-space: nowrap;
+}
+.fadingLine {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    /* rgba(255, 255, 255, 0) 0%, */ rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.footerTop {
+  width: 100%;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footerDescrItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.footerText {
+  font-size: 12px;
+  line-height: 170%;
+  color: var(--color-p);
+}
+.footerContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.footerFormItem {
+  /* border: 1px solid var(--border-form); */
+  border-radius: 14px;
+  padding: 24px 12px;
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 50px 0 rgba(0, 98, 255, 0.03);
+  background: inherit;
+}
+.footerContactItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.footerContactItem:hover {
+  transform: scale(1.04);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.footerContactItem:hover .footerText {
+  color: var(--accent-button);
+}
+.footerSocialList {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.footerSocialItem {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.footerSocialItem:hover .footerSocIcon {
+  transform: scale(1.04);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+  fill: var(--accent-button);
+}
+.footerSocIcon {
+  width: 34px;
+  height: 34px;
+  fill: var(--color-p);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.label {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.nameLabel {
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--color-label);
+}
+.input {
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--background-tech);
+  font-size: 14px;
+  border-bottom: 1px solid var(--amiora-color-1);
+}
+.textArea {
+  height: 114px;
+}
+.formBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  padding: 14px 20px;
+  width: 100%;
+  max-width: 461px;
+  height: 48px;
+  background: var(--accent-button);
+
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #0f0f0f;
+  margin-top: 14px;
+  transform: scale(1);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.formBtn:hover {
+  opacity: 0.8;
+  transform: scale(1.04);
+  transition: transform 500ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.error {
+  color: red;
+}
+
+.footerBootom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.footerBootomText {
+  font-size: 12px;
+  color: var(--color-f);
+}
+.footerBootomTextMob {
+  text-align: end;
+}
+@media screen and (min-width: 375px) {
+  .footerText {
+    font-size: 14px;
+  }
+  .formBtn {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footerTop {
+    margin-bottom: 80px;
+  }
+  .footerTitleBlock {
+    margin-bottom: 80px;
+  }
+  .footerContact {
+    gap: 48px;
+  }
+  .footerContactItem {
+    height: 27px;
+  }
+  .footerFormItem {
+    padding: 50px;
+    width: 540px;
+    border: 1px solid var(--border-form);
+  }
+  .footerTitle {
+    font-size: 20px;
+  }
+  .footerText {
+    font-size: 18px;
+  }
+  .footerBootomText {
+    font-size: 18px;
+  }
+  .nameLabel {
+    font-size: 16px;
+  }
+  .input {
+    height: 64px;
+  }
+  .formBtn {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footerTop {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .footerTitleBlock {
+    margin-bottom: 56px;
+  }
+  .footerContact {
+    align-items: flex-start;
+    gap: 28px;
+  }
+  .footerDescrItem {
+    width: 55%;
+    gap: 48px;
+  }
+  .footerFormItem {
+    width: 45%;
+  }
+  .formBtn {
+    height: 55px;
+  }
+  .footerContactItem {
+    height: 31px;
+  }
+  .footerTitle {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footerDescrItem {
+    width: 647px;
+  }
+  .footerFormItem {
+    width: 561px;
+  }
+}
